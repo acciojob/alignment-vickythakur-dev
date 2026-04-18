@@ -14,12 +14,11 @@
 
     table.middle {
       border-collapse: collapse;
-      border-spacing: 1px;
       width: 100%;
       margin-bottom: 20px;
     }
 
-    table.middle td, table.middle th {
+    table.middle td {
       border: 1px solid black;
       padding: 1px;
     }
@@ -34,10 +33,12 @@
 
     .green {
       background-color: green;
+      height: 20px;
     }
 
     .blue {
       background-color: blue;
+      height: 20px;
     }
   </style>
 </head>
@@ -48,22 +49,22 @@
   <table id="table-1" class="middle" border="1" cellspacing="1" cellpadding="1">
     <tr>
       <td id="t11">left</td>
+      <td id="t12" class="center">center</td>
+      <td id="t13" class="right">right</td>
+    </tr>
+    <tr>
+      <td>left</td>
       <td class="center">center</td>
       <td class="right">right</td>
     </tr>
     <tr>
-      <td id="t12">left</td>
-      <td class="center">center</td>
-      <td class="right">right</td>
-    </tr>
-    <tr>
-      <td id="t13">left</td>
+      <td>left</td>
       <td class="center">center</td>
       <td class="right">right</td>
     </tr>
   </table>
 
-  <table id="table-2" class="middle" border="1" cellspacing="1" cellpadding="10">
+  <table id="table-2" class="middle" border="1" cellspacing="1" cellpadding="1">
     <tr>
       <td id="t21" colspan="6"></td>
     </tr>
